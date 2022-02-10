@@ -1,7 +1,7 @@
 <div id=D__ID>
     <script>
         function F__ID(){
-            var app_id="wimr-staff-roster";
+            var app_id="wimr-dynamics";
             //--------------------------------------------------------
             var u=window.location.origin;
             if(u=="http://localhost:8000") u=u+"/auth.html";
@@ -44,6 +44,11 @@
                         });
                     }
                 }
+            }
+            if(sessionStorage.getItem(app_id+" token")==null){
+                sessionStorage.removeItem("vm_token");
+                sessionStorage.removeItem(app_id+" username");
+                sessionStorage.removeItem(app_id+" displayname");
             }
             $vm.init(function(){
                 $vm.init_status=1;

@@ -3,7 +3,7 @@
     var p=""; //put a unique prefix to avoid conflict with others 
     var H=$vm.hosting_path+"/modules";
     var m=$vm.module_list;
-    //var api="wimr-staff-roster";
+    //var api="wimr-dynamics";
     //-------------------------------------------------------------------------------------
     m[p+"search-staff"]     ={url:H+"/business/staff/page.html", prefix:p,router:1};
     m[p+"roster-data"]      ={url:H+"/business/roster/data.html",       Table:"staff-roster",  form_module:"roster-form"},
